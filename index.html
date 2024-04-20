@@ -3,40 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamental GIT</title>
+    <title>Branch</title>
 </head>
 <body>
     <p>
-        <b>Deskripsi</b>
+        <h3>Deskripsi</h3>
         <br>
-        Perintah perintah dasar yang sering dilakukan untuk mengoperasikan GIT
+        Cabang / copyan dari repo 
+        <br>
+        <h3>Manfaat</h3>
+        <br>
+        Parallel development
+        Bisa digunakan untuk memanajemen pengembangan. Misal test branch, unstable branch, stable branch
+        <br>
+        <h3>Kapan dibutuhkan</h3>
+        Saat mengembangakan fitur baru
         <br>
 
-        <b>Manfaat</b>
-        <br>
-        Terbiasa mengerjakan proyek dengan terdokumentasi
-        Fleksibel dalam mengeksplorasi fitur
-        Mempercepat dalam mengerjakan proyek terlebih jika proyek kolaborasi
-        <br>
+    </p>
 
-        <b>To do</b>
+    <p>
+        Pembahasan branch
         <br>
-        Git init = inisialisasi repo
+        Git branch: melihat semua branch (local)
         <br>
-        Git config = konfigurasi email dan username
+        Git branch --all: melihat semua branch (public)
         <br>
-        Git status = mengetahui status file
+        Git branch nama_branch: membuat branch baru
         <br>
-        Git add = masuk staging area
+        Git checkout nama_branch: untuk berpindah branch
         <br>
-        Git commit = mencatat perubahan
+        Git branch -d nama_branch: untuk menghapus branch
         <br>
-        Git clone = duplikasi repo dari server
+        Git merge nama_branch
+        untuk menggabungkan commit dari 2 branch
         <br>
-        <b>Kapan dibutuhkan</b>
+        Relatif terhadap branch yang aktif saat ini
+        Untuk melakukan merge harus dipastikan tidak ada file yang belum di commit
+
+    </p>
+
+    <p>
+        Conflict
         <br>
-        Saat mengerjakan proyek
-        <br>
+Kondisi yang terjadi ketika merging 2 branch yang memiliki perubahan pada file yang sama
+Ketika conflict, kita tidak bisa melakukan commit
+Untuk melakukan commit, conflict harus diselesaikan dulu
 
     </p>
 </body>
